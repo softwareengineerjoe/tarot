@@ -1,26 +1,25 @@
-import theFool from "./assets/major/00.jpg";
-import theMagician from "./assets/major/01.jpg";
-import theHighPriestess from "./assets/major/02.jpg";
-import theEmpress from "./assets/major/03.jpg";
-import theEmperor from "./assets/major/04.jpg";
-import theHierophant from "./assets/major/05.jpg";
-import theLovers from "./assets/major/06.jpg";
-import theChariot from "./assets/major/07.jpg";
-import strength from "./assets/major/08.jpg";
-import theHermit from "./assets/major/09.jpg";
-import wheelOfFortune from "./assets/major/10.jpg";
-import justice from "./assets/major/11.jpg";
-import theHangedMan from "./assets/major/12.jpg";
-import death from "./assets/major/13.jpg";
-import temperance from "./assets/major/14.jpg";
-import theDevil from "./assets/major/15.jpg";
-import theTower from "./assets/major/16.jpg";
-import theStar from "./assets/major/17.jpg";
-import theMoon from "./assets/major/18.jpg";
-import theSun from "./assets/major/19.jpg";
-import judgment from "./assets/major/20.jpg";
-import theWorld from "./assets/major/21.jpg";
-
+import theFool from "../assets/major/00.jpg";
+import theMagician from "../assets/major/01.jpg";
+import theHighPriestess from "../assets/major/02.jpg";
+import theEmpress from "../assets/major/03.jpg";
+import theEmperor from "../assets/major/04.jpg";
+import theHierophant from "../assets/major/05.jpg";
+import theLovers from "../assets/major/06.jpg";
+import theChariot from "../assets/major/07.jpg";
+import strength from "../assets/major/08.jpg";
+import theHermit from "../assets/major/09.jpg";
+import wheelOfFortune from "../assets/major/10.jpg";
+import justice from "../assets/major/11.jpg";
+import theHangedMan from "../assets/major/12.jpg";
+import death from "../assets/major/13.jpg";
+import temperance from "../assets/major/14.jpg";
+import theDevil from "../assets/major/15.jpg";
+import theTower from "../assets/major/16.jpg";
+import theStar from "../assets/major/17.jpg";
+import theMoon from "../assets/major/18.jpg";
+import theSun from "../assets/major/19.jpg";
+import judgment from "../assets/major/20.jpg";
+import theWorld from "../assets/major/21.jpg";
 
 const majorArcana = [
   {
@@ -288,4 +287,5 @@ const majorArcana = [
     },
   },
 ];
-export default { majorArcana };
+
+export default majorArcana;
