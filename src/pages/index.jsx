@@ -5,6 +5,7 @@ export default function index() {
   const goToPage = (path) => {
     navigate(path);
   };
+
   return (
     <main
       className="h-screen font-playfair"

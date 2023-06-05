@@ -16,7 +16,7 @@ import kingOfPentacles from "../assets/pentacles/PC4K.jpg";
 const pentacles = [
   {
     code: 1,
-    card: "Ace of Coins",
+    card: "Ace of Pentacles",
     link: "https://youtu.be/ybw8xov7J1U",
     img: aceOfPentacles,
     description: {
@@ -28,7 +28,7 @@ const pentacles = [
   },
   {
     code: 2,
-    card: "Two of Coins",
+    card: "Two of Pentacles",
     link: "https://youtu.be/wrk6S9jpXDc",
     img: twoOfPentacles,
     description: {
@@ -40,7 +40,7 @@ const pentacles = [
   },
   {
     code: 3,
-    card: "Three of Coins",
+    card: "Three of Pentacles",
     link: "https://youtu.be/xgccbjakcuM",
     img: threeOfPentacles,
     description: {
@@ -52,7 +52,7 @@ const pentacles = [
   },
   {
     code: 4,
-    card: "Four of Coins",
+    card: "Four of Pentacles",
     link: "https://youtu.be/Cw40_iEq6MA",
     img: fourOfPentacles,
     description: {
@@ -64,7 +64,7 @@ const pentacles = [
   },
   {
     code: 5,
-    card: "Five of Coins",
+    card: "Five of Pentacles",
     link: "https://youtu.be/ZNOWs7ovUZM",
     img: fiveOfPentacles,
     description: {
@@ -76,7 +76,7 @@ const pentacles = [
   },
   {
     code: 6,
-    card: "Six of Coins",
+    card: "Six of Pentacles",
     link: "https://youtu.be/kU_TO03FwKc",
     img: sixOfPentacles,
     description: {
@@ -88,7 +88,7 @@ const pentacles = [
   },
   {
     code: 7,
-    card: "Seven of Coins",
+    card: "Seven of Pentacles",
     link: "https://youtu.be/YtWACiQuiaA",
     img: sevenOfPentacles,
     description: {
@@ -100,7 +100,7 @@ const pentacles = [
   },
   {
     code: 8,
-    card: "Eight of Coins",
+    card: "Eight of Pentacles",
     link: "https://youtu.be/_xNlZprv11o",
     img: eightOfPentacles,
     description: {
@@ -112,7 +112,7 @@ const pentacles = [
   },
   {
     code: 9,
-    card: "Nine of Coins",
+    card: "Nine of Pentacles",
     link: "https://youtu.be/coKY9FHUN40",
     img: nineOfPentacles,
     description: {
@@ -124,7 +124,7 @@ const pentacles = [
   },
   {
     code: 10,
-    card: "Ten of Coins",
+    card: "Ten of Pentacles",
     link: "https://youtu.be/PuJLXXYBXsA",
     img: tenOfPentacles,
     description: {
@@ -136,7 +136,7 @@ const pentacles = [
   },
   {
     code: 11,
-    card: "Page of Coins",
+    card: "Page of Pentacles",
     link: "https://youtu.be/RGrTUuUJLpE",
     img: pageOfPentacles,
     description: {
@@ -148,7 +148,7 @@ const pentacles = [
   },
   {
     code: 12,
-    card: "Knight of Coins",
+    card: "Knight of Pentacles",
     link: "https://youtu.be/QzzCvi2WyeI",
     img: knightOfPentacles,
     description: {
@@ -160,7 +160,7 @@ const pentacles = [
   },
   {
     code: 13,
-    card: "Queen of Coins",
+    card: "Queen of Pentacles",
     link: "https://youtu.be/trLemY26XlA",
     img: queenOfPentacles,
     description: {
@@ -172,7 +172,7 @@ const pentacles = [
   },
   {
     code: 14,
-    card: "King of Coins",
+    card: "King of Pentacles",
     link: "https://youtu.be/X0-SBHg46Dc",
     img: kingOfPentacles,
     description: {

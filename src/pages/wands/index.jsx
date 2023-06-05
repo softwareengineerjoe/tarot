@@ -1,11 +1,21 @@
 import constants from "../../constants";
 import { UpSquareOutlined } from "@ant-design/icons";
 import Navbar from "../../components/Navbar";
+import { useState } from "react";
 
 const wands = constants.wands;
 console.log(wands);
 
 export default function index() {
+  const [isExpanded, setIsExpanded] = useState(
+    Array(wands.length).fill(false)
+  );
+
+  const toggleImage = (index) => {
+    let img = [...isExpanded];
+    img[index] = !img[index];
+    setIsExpanded(img);
+  };
   return (
     <>
       <div className={mainBox} id="top">
@@ -23,13 +33,21 @@ export default function index() {
           <span>d</span>
           <span>s</span>
         </h1>
-        {wands.map((card) => (
+        {wands.map((card, index) => (
           <div
             key={card.code}
             className="flex flex-col items-center justify-center gap-4 max-w-7xl"
           >
-            <h3 className={title}>{card.card}</h3>
-            <img src={card.img} alt={card.card} className="w-32" />
+            <a href={card.link} target="blank" className={title}>
+              {card.card}
+            </a>
+            <button onClick={() => toggleImage(index)}>
+              {isExpanded[index] ? (
+                <img src={card.img} alt={card.card} className="w-full" />
+              ) : (
+                <img src={card.img} alt={card.card} className="w-32" />
+              )}
+            </button>
             <h3 className={subtitle}>{card.card} Upright Position</h3>
             <p className={description}>{card.description.upright}</p>
             <h3 className={subtitle}>{card.card} Reversed Position</h3>

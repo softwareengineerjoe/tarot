@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair:wght@300&display=swap");
 
+body {
+  background-color: "#2a3042";
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
