@@ -1,19 +1,44 @@
-export default function index() {
+import { useState, useEffect } from "react";
+import Loader from "./Loader";
+import { useNavigate } from "react-router-dom";
+
+export default function Index() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulating a delay of 3 seconds
+    const delay = 3000;
+
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, delay);
+
+    return () => clearTimeout(timer); // Clear the timeout if the component unmounts
+  }, []);
+
+  const navigate = useNavigate();
+  const goToPage = (path) => {
+    navigate(path);
+  };
+
   return (
-    <main
-      className="h-screen font-playfair"
-      style={{ backgroundColor: "#2a3042" }}
-    >
-      <nav className="flex items-center justify-center h-full">
-        <ul className="flex gap-4 flex-col text-center text-[#c3a38c] text-2xl">
-          <h3 className="mb-4 text-3xl tracking-wider text-gray-200">
-            Let your fate be <span className="text-[#c3a38c]"> decided</span>
-          </h3>
-          <h3 className="mb-4 text-3xl tracking-widest text-gray-200">
-          <span className="text-[#c3a38c]">D</span>raw <span className="text-[#c3a38c]">Y</span>our <span className="text-[#c3a38c]">C</span>ards
-          </h3>
-        </ul>
-      </nav>
-    </main>
+    <>
+      {isLoading ? (
+        <Loader />
+      ) : (
+        <div
+          style={{ backgroundColor: "#2a3042" }}
+          className="flex flex-col items-center justify-center w-full h-screen gap-4 text-2xl font-semibold text-center text-gray-200 font-playfair"
+        >
+          <h1>This page is under development</h1>
+          <button
+            onClick={() => goToPage("/")}
+            className="border-2 px-6 py-2 rounded border-[#c3a38c] text-[#c3a38c] uppercase transition hover:scale-110 hover:opacity-70"
+          >
+            home
+          </button>
+        </div>
+      )}
+    </>
   );
 }
