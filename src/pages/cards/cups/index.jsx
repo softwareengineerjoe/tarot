@@ -1,15 +1,13 @@
-import constants from "../../constants";
+import constants from "../../../constants";
 import { UpSquareOutlined } from "@ant-design/icons";
-import Navbar from "../../components/Navbar";
 import { useState } from "react";
+import Navbar from "../../../components/Navbar";
 
-const swords = constants.swords;
-console.log(swords);
+const cups = constants.cups;
+console.log(cups);
 
 export default function index() {
-  const [isExpanded, setIsExpanded] = useState(
-    Array(swords.length).fill(false)
-  );
+  const [isExpanded, setIsExpanded] = useState(Array(cups.length).fill(false));
 
   const toggleImage = (index) => {
     let img = [...isExpanded];
@@ -21,11 +19,9 @@ export default function index() {
       <div className={mainBox} id="top">
         <Navbar />
         <h1 className="mt-4 text-3xl lg:mt-0">
-          <span>S</span>
-          <span>w</span>
-          <span>o</span>
-          <span>r</span>
-          <span>d</span>
+          <span>C</span>
+          <span>u</span>
+          <span>p</span>
           <span>s</span>
           <span> </span>
           <span>C</span>
@@ -34,7 +30,7 @@ export default function index() {
           <span>d</span>
           <span>s</span>
         </h1>
-        {swords.map((card, index) => (
+        {cups.map((card, index) => (
           <div
             key={card.code}
             className="flex flex-col items-center justify-center gap-4 max-w-7xl"

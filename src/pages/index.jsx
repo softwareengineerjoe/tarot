@@ -17,46 +17,16 @@ export default function index() {
             Tarot Cards
           </h1>
           <li className={navList}>
-            <button
-              onClick={() => goToPage("../major-arcana")}
-              className={navItem}
-            >
+            <button onClick={() => goToPage("../play")} className={play}>
               {" "}
-              Major Arcana
+              Play
             </button>
           </li>
           <li className={navList}>
-            <button onClick={() => goToPage("../swords")} className={navItem}>
-              {" "}
-              Swords
-            </button>
+            <button onClick={() => goToPage("../cards")}> Cards</button>
           </li>
           <li className={navList}>
-            <button onClick={() => goToPage("../cups")} className={navItem}>
-              {" "}
-              Cups
-            </button>
-          </li>
-          <li className={navList}>
-            <button onClick={() => goToPage("../wands")} className={navItem}>
-              {" "}
-              Wands
-            </button>
-          </li>
-          <li className={navList}>
-            <button
-              onClick={() => goToPage("../pentacles")}
-              className={navItem}
-            >
-              {" "}
-              Pentacles
-            </button>
-          </li>
-          <li className={navList}>
-            <button onClick={() => goToPage("../about")} className={navItem}>
-              {" "}
-              About
-            </button>
+            <button onClick={() => goToPage("../about")}> About</button>
           </li>
         </ul>
       </nav>
@@ -65,5 +35,7 @@ export default function index() {
 }
 
 const navList =
-  "hover:scale-125 transition ease-in flex justify-center items-center";
-const navItem = "flex flex-row gap-1 items-center";
+  "hover:scale-110 transition ease-in flex justify-center items-center";
+const play =
+"px-6 py-2 rounded  bg-[#8c7464] text-gray-200 uppercase";
+  // "border-2 px-6 py-2 rounded border-[#c3a38c] text-[#c3a38c] uppercase";
