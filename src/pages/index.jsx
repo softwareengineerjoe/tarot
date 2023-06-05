@@ -1,4 +1,3 @@
-import React from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function index() {
@@ -11,13 +10,16 @@ export default function index() {
       className="h-screen font-playfair"
       style={{ backgroundColor: "#2a3042" }}
     >
-      <nav className="flex justify-center h-full items-center">
+      <nav className="flex items-center justify-center h-full">
         <ul className="flex gap-4 flex-col text-center text-[#c3a38c] text-2xl">
-          <h1 className="text-5xl mb-4 text-gray-200 tracking-wider">
+          <h1 className="mb-4 text-5xl tracking-wider text-gray-200">
             Tarot Cards
           </h1>
           <li className={navList}>
-            <button onClick={() => goToPage("../major")} className={navItem}>
+            <button
+              onClick={() => goToPage("../major-arcana")}
+              className={navItem}
+            >
               {" "}
               Major Arcana
             </button>

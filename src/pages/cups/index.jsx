@@ -1,4 +1,4 @@
-import React from "react";
+import Navbar from "../../components/Navbar";
 import constants from "../../constants";
 import { UpSquareOutlined } from "@ant-design/icons";
 
@@ -9,7 +9,8 @@ export default function index() {
   return (
     <>
       <div className={mainBox} id="top">
-        <h1 className="text-3xl">
+        <Navbar />
+        <h1 className="mt-4 text-3xl lg:mt-0">
           <span>C</span>
           <span>u</span>
           <span>p</span>
@@ -24,7 +25,7 @@ export default function index() {
         {cups.map((card) => (
           <div
             key={card.code}
-            className="flex flex-col items-center justify-center gap-4"
+            className="flex flex-col items-center justify-center gap-4 max-w-7xl"
           >
             <h3 className={title}>{card.card}</h3>
             <img src={card.img} alt={card.card} className="w-32" />

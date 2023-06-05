@@ -1,6 +1,6 @@
-import React from "react";
 import constants from "../../constants";
 import { UpSquareOutlined } from "@ant-design/icons";
+import Navbar from "../../components/Navbar";
 
 const wands = constants.wands;
 console.log(wands);
@@ -9,7 +9,8 @@ export default function index() {
   return (
     <>
       <div className={mainBox} id="top">
-        <h1 className="text-3xl">
+        <Navbar />
+        <h1 className="mt-4 text-3xl lg:mt-0">
           <span>W</span>
           <span>a</span>
           <span>n</span>
@@ -25,7 +26,7 @@ export default function index() {
         {wands.map((card) => (
           <div
             key={card.code}
-            className="flex flex-col items-center justify-center gap-4"
+            className="flex flex-col items-center justify-center gap-4 max-w-7xl"
           >
             <h3 className={title}>{card.card}</h3>
             <img src={card.img} alt={card.card} className="w-32" />
