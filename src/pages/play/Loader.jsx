@@ -3,7 +3,7 @@ import { easeIn, motion } from "framer-motion";
 export default function Loader() {
   return (
     <main
-      className="h-screen font-playfair"
+      className="h-screen overflow-hidden font-playfair"
       style={{ backgroundColor: "#2a3042" }}
     >
       <nav className="flex items-center justify-center h-full">
