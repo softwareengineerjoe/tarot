@@ -140,8 +140,8 @@ const generate =
   "px-6 py-2 rounded  bg-[#8c7464] text-gray-200 uppercase  transition hover:scale-110 hover:opacity-70";
 const home =
   "border-2 px-6 py-2 rounded border-[#c3a38c] text-[#c3a38c] uppercase transition hover:scale-110 hover:opacity-70";
-const modal =
-  "absolute top-0 md:fixed md:top-auto bg-gray-800 bg-gray-800 text-[#c3a38c] max-w-4xl p-8 rounded";
+  const modal =
+  "absolute z-50 top-0 md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 bg-gray-800 bg-gray-800 text-[#c3a38c] max-w-4xl p-8 rounded"; 
 const modalContent =
   " text-gray-200 tracking-wide leading-2 indent-8 relative text-justify flex flex-col gap-2";
 const closeButton =
