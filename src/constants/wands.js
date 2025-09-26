@@ -8,7 +8,7 @@ import sevenOfWands from "../assets/wands/W07.jpg";
 import eightOfWands from "../assets/wands/W08.jpg";
 import nineOfWands from "../assets/wands/W09.jpg";
 import tenOfWands from "../assets/wands/W10.jpg";
-import pageOfWands from "../assets/wands/Wc1P.jpg";
+import pageOfWands from "../assets/wands/WC1P.jpg";
 import knightOfWands from "../assets/wands/WC2k.jpg";
 import queenOfWands from "../assets/wands/WC3Q.jpg";
 import kingOfWands from "../assets/wands/WC4K.jpg";
