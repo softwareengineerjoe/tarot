@@ -4,7 +4,6 @@ import Navbar from "../../../components/Navbar";
 import { useState } from "react";
 
 const pentacles = constants.pentacles;
-console.log(pentacles);
 
 export default function index() {
   const [isExpanded, setIsExpanded] = useState(

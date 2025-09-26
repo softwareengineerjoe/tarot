@@ -20,11 +20,25 @@ export default {
           '0%': { opacity: '0' },
           '100%': { opacity: '1' },
         },
+        flipIn: {
+          '0%': {
+            transform: 'rotateY(90deg)',
+            opacity: '0',
+            transformStyle: 'preserve-3d',
+          },
+          '100%': {
+            transform: 'rotateY(0deg)',
+            opacity: '1',
+            transformStyle: 'preserve-3d',
+          },
+        },
       },
       animation: {
         flicker: 'flicker 3s infinite',
         floatColor: 'floatAndColor 5s ease-in-out infinite',
         fadeIn: 'fadeIn 1s ease forwards',
+        flipIn: 'flipIn 0.6s ease-out forwards',
+
       },
     },
   },

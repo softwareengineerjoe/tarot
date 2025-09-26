@@ -4,7 +4,6 @@ import Navbar from "../../../components/Navbar";
 import { useState } from "react";
 
 const wands = constants.wands;
-console.log(wands);
 
 export default function index() {
   const [isExpanded, setIsExpanded] = useState(

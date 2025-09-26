@@ -4,7 +4,6 @@ import Navbar from "../../../components/Navbar";
 import { useState } from "react";
 
 const majorArcana = constants.majorArcana;
-console.log(majorArcana);
 
 export default function index() {
   const [isExpanded, setIsExpanded] = useState(

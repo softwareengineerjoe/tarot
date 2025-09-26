@@ -4,7 +4,6 @@ import Navbar from "../../../components/Navbar";
 import { useState } from "react";
 
 const swords = constants.swords;
-console.log(swords);
 
 export default function index() {
   const [isExpanded, setIsExpanded] = useState(
