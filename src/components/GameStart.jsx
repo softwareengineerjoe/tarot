@@ -52,7 +52,7 @@ export default function GameStart() {
         onClick={() => {
           navigate("/");
         }}
-        className="uppercase text-[#8c7464] text-7xl w-full hidden lg:block -rotate-90 opacity-0 animate-fadeIn"
+        className="uppercase text-[#8c7464] hover:text-gray-200 ease-in duration-200 text-7xl w-full hidden lg:block -rotate-90 opacity-0 animate-fadeIn"
         style={{
           animationDelay: "3s",
           animationFillMode: "forwards",
@@ -97,7 +97,7 @@ export default function GameStart() {
         onClick={() => {
           window.location.reload();
         }}
-        className="uppercase text-[#8c7464] text-7xl w-full hidden lg:block rotate-90 opacity-0 animate-fadeIn"
+        className="uppercase text-[#8c7464] hover:text-gray-200 ease-in duration-200 text-7xl w-full hidden lg:block rotate-90 opacity-0 animate-fadeIn"
         style={{
           animationDelay: "3s",
           animationFillMode: "forwards",

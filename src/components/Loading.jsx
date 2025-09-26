@@ -51,7 +51,7 @@ export default function Loading({ setDrawCards }) {
             if (isReady) goToPage("/");
           }}
           disabled={!isReady}
-          className={`border-2 border-[#8c7464] text-[#8c7464] px-6 py-2 rounded uppercase transition ${
+          className={`border-2 border-[#8c7464] text-[#8c7464] px-6 py-2 rounded uppercase transition cursor-pointer ${
             isReady
               ? "hover:scale-110 hover:opacity-70 cursor-default"
               : "opacity-50 cursor-not-allowed"
@@ -64,7 +64,7 @@ export default function Loading({ setDrawCards }) {
             if (isReady) setDrawCards(true);
           }}
           disabled={!isReady}
-          className={`bg-[#8c7464] text-gray-200 px-6 py-2 rounded uppercase transition ${
+          className={`bg-[#8c7464] text-gray-200 px-6 py-2 rounded uppercase transition cursor-pointer ${
             isReady
               ? "hover:scale-110 hover:opacity-70 cursor-default"
               : "opacity-50 cursor-not-allowed"

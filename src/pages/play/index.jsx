@@ -6,6 +6,6 @@ export default function Index() {
   const [drawCards, setDrawCards] = useState(false);
 
   return (
-    <>{drawCards ? <Loading setDrawCards={setDrawCards} /> : <GameStart />}</>
+    <>{!drawCards ? <Loading setDrawCards={setDrawCards} /> : <GameStart />}</>
   );
 }
