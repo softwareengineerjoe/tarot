@@ -16,17 +16,21 @@ export default function index() {
           <h1 className="mb-4 text-5xl tracking-wider text-gray-200">
             Tarot Cards
           </h1>
+          <li className="hover:scale-110 transition ease-in flex justify-center items-center">
+            <button onClick={() => goToPage("../play")} className="bg-[#8c7464] text-gray-200 px-6 py-2 rounded uppercase">
+              {" "}
+              play
+            </button>
+          </li>
+
           <li className={navList}>
-            <button
-              onClick={() => goToPage("../cards")}
-              className={navItem}
-            >
+            <button onClick={() => goToPage("../cards")}>
               {" "}
               Cards
             </button>
           </li>
           <li className={navList}>
-            <button onClick={() => goToPage("../about")} className={navItem}>
+            <button onClick={() => goToPage("../about")}>
               {" "}
               About
             </button>
@@ -39,4 +43,3 @@ export default function index() {
 
 const navList =
   "hover:scale-125 transition ease-in flex justify-center items-center";
-const navItem = "flex flex-row gap-1 items-center";
