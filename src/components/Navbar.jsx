@@ -28,30 +28,30 @@ export default function Navbar() {
             : "-translate-y-full transition-transform ease-in"
         }`}
       >
-        <button onClick={() => goToPage("/")} className={navItem}>
+        <button onClick={() => goToPage("/cards")} className={navItem}>
           <LeftOutlined
             style={{ color: "#B66D38", marginY: "auto" }}
             className="hidden font-bold lg:flex"
           />
           <span className="lg:hidden">Home</span>
         </button>
-        <button onClick={() => goToPage("../major-arcana")} className={navItem}>
+        <button onClick={() => goToPage("/cards/major-arcana")} className={navItem}>
           Major Arcana
         </button>
-        <button onClick={() => goToPage("../swords")} className={navItem}>
+        <button onClick={() => goToPage("/cards/swords")} className={navItem}>
           Swords
         </button>
-        <button onClick={() => goToPage("../cups")} className={navItem}>
+        <button onClick={() => goToPage("/cards/cups")} className={navItem}>
           Cups
         </button>
-        <button onClick={() => goToPage("../wands")} className={navItem}>
+        <button onClick={() => goToPage("/cards/wands")} className={navItem}>
           {" "}
           Wands
         </button>
-        <button onClick={() => goToPage("../pentacles")} className={navItem}>
+        <button onClick={() => goToPage("/cards/pentacles")} className={navItem}>
           Pentacles
         </button>
-        <button onClick={() => goToPage("../about")} className={navItem}>
+        <button onClick={() => goToPage("/cards/about")} className={navItem}>
           About
         </button>
       </nav>

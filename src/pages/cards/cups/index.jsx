@@ -1,14 +1,14 @@
-import constants from "../../constants";
+import constants from "../../../constants";
 import { UpSquareOutlined } from "@ant-design/icons";
-import Navbar from "../../components/Navbar";
+import Navbar from "../../../components/Navbar";
 import { useState } from "react";
 
-const majorArcana = constants.majorArcana;
-console.log(majorArcana);
+const cups = constants.cups;
+console.log(cups);
 
 export default function index() {
   const [isExpanded, setIsExpanded] = useState(
-    Array(majorArcana.length).fill(false)
+    Array(cups.length).fill(false)
   );
 
   const toggleImage = (index) => {
@@ -21,18 +21,10 @@ export default function index() {
       <div className={mainBox} id="top">
         <Navbar />
         <h1 className="mt-4 text-3xl lg:mt-0">
-          <span>M</span>
-          <span>a</span>
-          <span>j</span>
-          <span>o</span>
-          <span>r</span>
-          <span> </span>
-          <span>A</span>
-          <span>r</span>
-          <span>c</span>
-          <span>a</span>
-          <span>n</span>
-          <span>a</span>
+          <span>C</span>
+          <span>u</span>
+          <span>p</span>
+          <span>s</span>
           <span> </span>
           <span>C</span>
           <span>a</span>
@@ -40,7 +32,7 @@ export default function index() {
           <span>d</span>
           <span>s</span>
         </h1>
-        {majorArcana.map((card, index) => (
+        {cups.map((card, index) => (
           <div
             key={card.code}
             className="flex flex-col items-center justify-center gap-4 max-w-7xl"

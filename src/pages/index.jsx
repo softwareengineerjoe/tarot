@@ -18,38 +18,11 @@ export default function index() {
           </h1>
           <li className={navList}>
             <button
-              onClick={() => goToPage("../major-arcana")}
+              onClick={() => goToPage("../cards")}
               className={navItem}
             >
               {" "}
-              Major Arcana
-            </button>
-          </li>
-          <li className={navList}>
-            <button onClick={() => goToPage("../swords")} className={navItem}>
-              {" "}
-              Swords
-            </button>
-          </li>
-          <li className={navList}>
-            <button onClick={() => goToPage("../cups")} className={navItem}>
-              {" "}
-              Cups
-            </button>
-          </li>
-          <li className={navList}>
-            <button onClick={() => goToPage("../wands")} className={navItem}>
-              {" "}
-              Wands
-            </button>
-          </li>
-          <li className={navList}>
-            <button
-              onClick={() => goToPage("../pentacles")}
-              className={navItem}
-            >
-              {" "}
-              Pentacles
+              Cards
             </button>
           </li>
           <li className={navList}>

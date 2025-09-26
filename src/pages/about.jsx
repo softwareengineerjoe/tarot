@@ -11,7 +11,7 @@ export default function about() {
   };
   return (
     <>
-      <div className={mainBox} id="top">
+      <div className={mainBox} id="about">
         <h1 className="text-3xl">
           <span>A</span>
           <span>b</span>
@@ -40,7 +40,7 @@ export default function about() {
 }
 
 const mainBox =
-  "flex flex-col justify-center items-center text-justify gap-6 py-8 px-12 lg:px-32 font-playfair text-gray-200 bg-[#2a3042] relative min-h-screen";
+  "flex flex-col justify-center items-center text-justify gap-6 py-8 px-12 font-playfair text-gray-200 bg-[#2a3042] relative min-h-screen";
 const title = "text-2xl text-[#c3a38c] text-center";
 const description = "text-sm text-justify";
 const navItem = "border-2 px-6 py-2 rounded border-[#c3a38c] text-[#c3a38c] uppercase transition hover:scale-110 hover:opacity-70";

@@ -1,14 +1,14 @@
-import constants from "../../constants";
+import constants from "../../../constants";
 import { UpSquareOutlined } from "@ant-design/icons";
-import Navbar from "../../components/Navbar";
+import Navbar from "../../../components/Navbar";
 import { useState } from "react";
 
-const pentacles = constants.pentacles;
-console.log(pentacles);
+const majorArcana = constants.majorArcana;
+console.log(majorArcana);
 
 export default function index() {
   const [isExpanded, setIsExpanded] = useState(
-    Array(pentacles.length).fill(false)
+    Array(majorArcana.length).fill(false)
   );
 
   const toggleImage = (index) => {
@@ -21,15 +21,18 @@ export default function index() {
       <div className={mainBox} id="top">
         <Navbar />
         <h1 className="mt-4 text-3xl lg:mt-0">
-          <span>P</span>
-          <span>e</span>
-          <span>n</span>
-          <span>t</span>
+          <span>M</span>
           <span>a</span>
+          <span>j</span>
+          <span>o</span>
+          <span>r</span>
+          <span> </span>
+          <span>A</span>
+          <span>r</span>
           <span>c</span>
-          <span>l</span>
-          <span>e</span>
-          <span>s</span>
+          <span>a</span>
+          <span>n</span>
+          <span>a</span>
           <span> </span>
           <span>C</span>
           <span>a</span>
@@ -37,7 +40,7 @@ export default function index() {
           <span>d</span>
           <span>s</span>
         </h1>
-        {pentacles.map((card, index) => (
+        {majorArcana.map((card, index) => (
           <div
             key={card.code}
             className="flex flex-col items-center justify-center gap-4 max-w-7xl"
