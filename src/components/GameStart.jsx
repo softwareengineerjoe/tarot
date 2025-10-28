@@ -73,7 +73,7 @@ export default function GameStart() {
         close
       </button>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-10 w-full p-8 lg:p-0">
+      <div className="grid grid-cols-3 gap-4 md:gap-10 w-full p-4 md:p-8 lg:p-0 my-auto">
         {cardsWithState.map(({ card, isReversed }, index) => (
           <div
             key={`${card.card}-${index}`}
@@ -116,31 +116,6 @@ export default function GameStart() {
       >
         draw again
       </button>
-
-      <div className="grid md:grid-cols-2 w-full lg:hidden">
-        <button
-          onClick={() => navigate("/")}
-          className="border md:border-2 py-4 md:py-12 text-gray-200 uppercase bg-[#8c7464] text-xl md:text-3xl w-full lg:hidden opacity-0 animate-fadeIn"
-          style={{
-            animationDelay: "3s",
-            animationFillMode: "forwards",
-            pointerEvents: isAnimating ? "none" : "auto",
-          }}
-        >
-          close
-        </button>
-        <button
-          onClick={drawCards}
-          className="border md:border-2 py-4 md:py-12 text-gray-200 uppercase bg-[#8c7464] text-xl md:text-3xl w-full lg:hidden opacity-0 animate-fadeIn"
-          style={{
-            animationDelay: "3s",
-            animationFillMode: "forwards",
-            pointerEvents: isAnimating ? "none" : "auto",
-          }}
-        >
-          draw again
-        </button>
-      </div>
 
       {/* Modal */}
       {openModal && selectedIndex !== null && (
@@ -187,6 +162,12 @@ export default function GameStart() {
               className="w-full p-2 border-2 px-6 py-2 rounded border-[#c3a38c] text-[#c3a38c] uppercase transition hover:opacity-70"
             >
               close
+            </button>
+            <button
+              onClick={drawCards}
+              className="w-full p-2 border-2 px-6 py-2 rounded border-black/60 text-black/60 bg-[#c3a38c] uppercase transition hover:opacity-70 mt-2 md:hidden"
+            >
+              draw again
             </button>
           </div>
         </div>
