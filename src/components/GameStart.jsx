@@ -104,19 +104,15 @@ export default function GameStart() {
             </button>
           </div>
         ))}
-      </div>
+
 
       <button
-        onClick={drawCards}
-        className="uppercase text-[#8c7464] hover:text-gray-200 ease-in duration-200 text-7xl w-full hidden lg:block rotate-90 opacity-0 animate-fadeIn"
-        style={{
-          animationDelay: "3s",
-          animationFillMode: "forwards",
-          pointerEvents: isAnimating ? "none" : "auto",
-        }}
+        onClick={() => navigate("/")}
+         className="w-full p-2 border-2 px-6 py-2 rounded border-[#c3a38c] text-[#c3a38c] uppercase transition hover:opacity-70 md:hidden col-span-3 mt-8"
       >
-        draw again
-      </button>
+          quit
+        </button>
+      </div>
 
       {/* Modal */}
       {openModal && selectedIndex !== null && (
