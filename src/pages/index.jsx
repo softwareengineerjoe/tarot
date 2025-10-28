@@ -12,11 +12,12 @@ export default function index() {
       style={{ backgroundColor: "#2a3042" }}
     >
       <nav className="flex items-center justify-center h-full">
-        <ul className="flex gap-4 flex-col text-center text-[#c3a38c] text-2xl">
+        <div className="flex gap-4 flex-col text-center text-[#c3a38c] text-2xl">
           <h1 className="mb-4 text-5xl tracking-wider text-gray-200">
             Tarot Cards
           </h1>
-          <li className="hover:scale-110 transition ease-in flex justify-center items-center">
+          <ul className="flex gap-4 flex-col">
+            <li className="hover:scale-110 transition ease-in flex justify-center items-center">
             <button onClick={() => goToPage("../play")} className="bg-[#8c7464] text-gray-200 px-6 py-2 rounded uppercase">
               {" "}
               play
@@ -35,7 +36,8 @@ export default function index() {
               About
             </button>
           </li>
-        </ul>
+          </ul>
+        </div>
       </nav>
     </main>
   );
