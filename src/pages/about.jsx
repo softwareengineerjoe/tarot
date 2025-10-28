@@ -1,13 +1,39 @@
 import constants from "../constants";
 import { useNavigate } from "react-router-dom";
+import { DownloadOutlined, MobileOutlined, CheckCircleOutlined } from "@ant-design/icons";
+import { useState, useEffect } from "react";
 
 const tarots = constants.tarots;
 
 export default function about() {
   const navigate = useNavigate();
+  const [deferredPrompt, setDeferredPrompt] = useState(null);
+  const [isInstallable, setIsInstallable] = useState(false);
+
+  useEffect(() => {
+    const handler = (e) => {
+      e.preventDefault();
+      setDeferredPrompt(e);
+      setIsInstallable(true);
+    };
+    window.addEventListener("beforeinstallprompt", handler);
+    return () => window.removeEventListener("beforeinstallprompt", handler);
+  }, []);
+
+  const handleInstallClick = async () => {
+    if (!deferredPrompt) return;
+    deferredPrompt.prompt();
+    const { outcome } = await deferredPrompt.userChoice;
+    if (outcome === "accepted") {
+      setDeferredPrompt(null);
+      setIsInstallable(false);
+    }
+  };
+
   const goToPage = (path) => {
     navigate(path);
   };
+
   return (
     <div className={mainBox} id="about">
       <h1 className="text-3xl">About</h1>
@@ -22,6 +48,32 @@ export default function about() {
           </div>
         </div>
       ))}
+
+      <div className="flex flex-col items-center gap-4 mt-8 p-6 rounded-lg border-2 border-[#c3a38c]/30 bg-[#1a1e2e]/50 max-w-xl">
+        <div className="flex items-center gap-2 text-[#c3a38c]">
+          <MobileOutlined style={{ fontSize: "2rem" }} />
+          <h3 className="text-xl font-semibold">Install Our App</h3>
+        </div>
+        <p className="text-sm text-gray-300 text-center">
+          Experience Tarot ni Alma as a native app! Install it on your device for quick access and offline use.
+        </p>
+        {isInstallable ? (
+          <button 
+            onClick={handleInstallClick}
+            className="flex items-center gap-2 bg-[#8c7464] text-gray-200 px-6 py-3 rounded uppercase hover:opacity-90 transition"
+          >
+            <DownloadOutlined />
+            Install Now
+          </button>
+        ) : (
+          <div className="flex flex-col items-center gap-2 text-sm text-gray-400">
+            <CheckCircleOutlined className="text-green-400 text-2xl" />
+            <p>Already installed or use your browser's install option</p>
+            <p className="text-xs text-center mt-2">On mobile: Tap the share button → "Add to Home Screen"</p>
+          </div>
+        )}
+      </div>
+
       <button onClick={() => goToPage("/")} className={navItem}>
         {" "}
         home
