@@ -26,6 +26,7 @@ export default function GameStart() {
   function drawCards() {
     const drawn = getRandomCardsWithReversed(allCards, 6);
     setCardsWithState(drawn);
+    setOpenModal(false);
     setIsAnimating(true);
 
     if (animationTimeout.current) {
